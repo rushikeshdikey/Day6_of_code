@@ -50,16 +50,29 @@
 # print(total)
 
 #adding even numbers
-#logic 1
-total = 0
-for number in range(1, 101, 2):
-    #print(number)
-    total += number
-print(total)
-#logic 2
-total1 = 0
-for number in range(1, 101):
-    #print(number)
-    if number % 2 == 0:
-        total1 += number
-print(total)
+##logic 1
+# total = 0
+# for number in range(1, 101, 2):
+#     #print(number)
+#     total += number
+# print(total)
+# #logic 2
+# total1 = 0
+# for number in range(1, 101):
+#     #print(number)
+#     if number % 2 == 0:
+#         total1 += number
+# print(total)
+
+#FUZZBIZZ
+for i in range(1, 101):
+    #divisble by both 3 and 5
+    if i % 3 == 0 and i % 5 == 0:
+        i = 'FizzBuzz'
+    # divisble by 3
+    elif i % 3 == 0:
+        i = 'Fizz'
+    # divisble by 5
+    elif i % 5 == 0:
+        i = 'Buzz'
+    print(i)
